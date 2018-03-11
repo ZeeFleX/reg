@@ -1,0 +1,15 @@
+.tiles__tile {
+  display: block;
+  float: left;
+  height: 240px;
+  width: 33.33%;
+  text-align: center;
+  position: relative; }
+
+@media (max-width: 1024px) {
+  .tiles__tile {
+    width: 50%; } }
+
+@media (max-width: 480px) {
+  .tiles__tile {
+    width: 100%; } }
