@@ -13,6 +13,7 @@ import Tiles from './containers/tiles/index.jsx';
 import TileDetails from './containers/tiles/tileDetails/index.jsx';
 import About from './containers/about/index.jsx';
 import Contacts from './containers/contacts/index.jsx';
+import NotFound from './components/404.jsx';
 
 //Styles
 import './fonts/font-awesome-4.7.0/css/font-awesome.min.css';
@@ -28,6 +29,7 @@ ReactDOM.render(
 				<Route path="/tiles/:id" component={TileDetails} />
 				<Route path='about' component={About} />
 				<Route path='contacts' component={Contacts} />
+				<Route path="*" component={NotFound} />
 			</Route>
 		</Router>
 	</Provider>,

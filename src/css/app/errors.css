@@ -1,0 +1,24 @@
+.errors-container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  max-width: 300px;
+  z-index: 1; }
+
+.errors-container__error {
+  position: relative;
+  margin: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 2px 15px; }
+  .errors-container__error.warning {
+    background: #d75757; }
+  .errors-container__error.success {
+    background: #367b03; }
+
+.errors-container__close-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer; }

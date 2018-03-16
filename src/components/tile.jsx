@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
+import { PropTypes } from 'prop-types';
+
 import '../css/app/tiles/tiles__tile.css';
 import '../css/app/tiles/tiles__tile_double.css';
 import '../css/app/tiles/tile-content/tile-content.css';
@@ -29,5 +31,9 @@ class Tile extends Component {
 		);
 	}
 }
+
+Tile.propTypes = {
+	children: PropTypes.object.isRequired
+};
 
 export default Tile;
