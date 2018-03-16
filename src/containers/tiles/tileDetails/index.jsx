@@ -14,8 +14,6 @@ class TileDetails extends Component {
   		
   		if (!!this.props.tile) {
   			content = <div><img src={ this.props.tile.image } alt={ this.props.tile.title }/><br/><h1>{ this.props.tile.title }</h1><p>{ this.props.tile.text }</p></div>;
-  		} else{		
-  			content = <NotFound message="Такой статьи не существует"></NotFound>
   		}
 	    return (
 	    	<div>
